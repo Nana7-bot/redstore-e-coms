@@ -10,6 +10,9 @@ a {
 p {
   color: #555;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 
 /* #################### Nav bar Styling ##########################*/
 .header {
@@ -73,11 +76,11 @@ p {
   background: #563434;
 }
 
-/* ----------------- Feature Section Styling -------------- */
+/* ----------------- Feature Categories Section Styling -------------- */
 .categories {
   margin: 70px;
 }
-.categories .small-container {
+.small-container {
   max-width: 1080px;
   margin: auto;
   padding: 0 25px;
@@ -89,4 +92,60 @@ p {
 }
 .categories .col-3 img {
   width: 100%;
+}
+
+/* ----------------- Feature Product Section Styling -------------- */
+.products .col-4 {
+  flex-basis: 25px;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.products h2 {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+.products h2::after {
+  content: " ";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.products .col-4:hover {
+  transform: translateY(-5px);
+}
+.products .col-4 img {
+  width: 100%;
+}
+.products .col-4 h4 {
+  color: #555;
+  font-weight: normal;
+}
+.products .col-4 .rating i {
+  color: #ff523b;
+}
+.products .col-4 p {
+  font-size: 14px;
+}
+
+/* ------------------ Offer Section Styling --------------------- */
+.offer {
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.offer .col-2 img {
+  padding: 50px;
+}
+.offer .col-2 small {
+  color: #555;
 }
