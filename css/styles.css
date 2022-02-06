@@ -50,7 +50,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.row .col-2 {
+.col-2 {
   flex-basis: 50%;
   min-width: 300px;
 }
@@ -63,7 +63,7 @@ body {
   line-height: 60px;
   margin: 25px;
 }
-.row .col-2 .btn {
+.btn {
   display: inline-block;
   background: #ff523b;
   color: #fff;
@@ -72,7 +72,7 @@ body {
   border-radius: 30px;
   transition: background 0.5s;
 }
-.row .col-2 .btn:hover {
+.col-2 .btn:hover {
   background: #563434;
 }
 
@@ -85,7 +85,7 @@ body {
   margin: auto;
   padding: 0 25px;
 }
-.categories .col-3 {
+.col-3 {
   flex-basis: 30%;
   min-width: 250px;
   margin-bottom: 30px;
@@ -95,7 +95,7 @@ body {
 }
 
 /* ----------------- Feature Product Section Styling -------------- */
-.products .col-4 {
+.col-4 {
   flex-basis: 25px;
   padding: 10px;
   min-width: 200px;
@@ -148,4 +148,54 @@ body {
 }
 .offer .col-2 small {
   color: #555;
+}
+/* ----------------- Testimony Section Styling ----------------- */
+.testimony-section {
+  padding-top: 100px;
+}
+.testimony-section .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.testimony-section .col-3 img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testimony-section .col-3:hover {
+  transform: translateY(-10px);
+}
+.testimony-section .fa-quote-left {
+  font-size: 34px;
+  color: #ff523b;
+}
+.testimony-section .col-3 p {
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
+}
+
+.testimony-section .col-3 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+/* ----------------- Brands Section Styling ----------------- */
+.brands {
+  margin: 100px auto;
+}
+.col-5 {
+  width: 160px;
+}
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.col-5 img:hover {
+  filter: grayscale(0);
 }
