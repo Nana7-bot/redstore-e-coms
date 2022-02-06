@@ -10,6 +10,9 @@ a {
 p {
   color: #555;
 }
+ul {
+  list-style-type: none;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -31,6 +34,11 @@ body {
 .navbar nav {
   flex: 1;
   text-align: right;
+}
+.navbar .menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
 }
 .navbar nav ul {
   list-style-type: none;
@@ -198,4 +206,94 @@ body {
 }
 .col-5 img:hover {
   filter: grayscale(0);
+}
+
+/* ----------------- Footer Section Styling ----------------- */
+.footer-section {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer-section p {
+  color: #8a8a8a;
+}
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.footer-col-1 .download-app-logo {
+  margin-top: 20px;
+}
+.footer-col-1 .download-app-logo img {
+  width: 140px;
+}
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 180px;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+.footer-section hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.footer-section .copyright {
+  text-align: center;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+        MEDIA QUERY STYLING
+#########################################################################################################*/
+
+@media only screen and (max-width: 800px) {
+  .navbar nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .navbar nav ul li {
+    display: block;
+    margin: 10px 50px 0;
+  }
+  .navbar nav ul li a {
+    color: #fff;
+  }
+  .navbar .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%;
+  }
 }
