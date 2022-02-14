@@ -110,7 +110,7 @@ body {
   margin-bottom: 50px;
   transition: transform 0.5s;
 }
-.products h2 {
+.products .small-container .title {
   text-align: center;
   margin: 0 auto 80px;
   position: relative;
@@ -258,6 +258,36 @@ body {
 }
 .footer-section .copyright {
   text-align: center;
+}
+
+/* @@@@@@@@@@@@@ Products Page Styling @@@@@@@@@@@@@@@@@@@@@ */
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+.row-2 select {
+  border: 1px solid #ff523b;
+  padding: 5px;
+}
+.row-2 select:focus {
+  outline: none;
+}
+.small-container .page-btn {
+  margin: 0 auto 80px;
+}
+.small-container .page-btn span {
+  display: inline-block;
+  border: 1px solid #ff523b;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.small-container .page-btn span:hover {
+  background: #ff523b;
+  color: white;
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
