@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Product Detail- RedStore</title>
+
+       <!-- Local CSS -->
+       <link rel="stylesheet" href="css/styles.css">
+
+       <!-- Google Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+
+       <!-- Fontawesome CDN -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+       <!-- ########################
+                     Header Section
+       ############################## -->
+       <div class="container">
+              <div class="navbar">
+                     <div class="logo">
+                            <img src="images/logo.png" alt="logo" width="125px">
+                     </div>
+
+                     <nav>
+                            <ul id="MenuItems">
+                                   <li><a href="#">Home</a></li>
+                                   <li><a href="#">Products</a></li>
+                                   <li><a href="#">About</a></li>
+                                   <li><a href="#">Contact</a></li>
+                                   <li><a href="#">Account</a></li>
+                            </ul>
+                     </nav>
+                     <img src="images/cart.png" alt="cart bag" width="30px" height="30px">
+                     <img class="menu-icon" src="images/menu.png" onclick="menuToggle()">
+              </div>
+
+
+       </div>
+
+
+       <!-- #########################
+              Account Section
+       ########################## -->
+       <div class="account-page">
+              <div class="container">
+                     <div class="row">
+                            <div class="col-2">
+                                   <img src="images/image1.png" width="100%">
+                            </div>
+
+                            <div class="col-2">
+                                   <div class="form-container">
+                                          <div class="form-btn">
+                                                 <span onclick="loginFn()">Login</span>
+                                                 <span onclick="registerFn()">Register</span>
+                                                 <hr id="indicator">
+                                          </div>
+
+                                          <form id="logForm">
+                                                 <input type="text" placeholder="Username">
+                                                 <input type="password" placeholder="Password">
+                                                 <button type="submit" class="btn">Login</button>
+                                                 <a href="#">forgot password</a>
+                                          </form>
+
+                                          <form id="regForm" class="non-active-form">
+                                                 <input type="text" placeholder="Username">
+                                                 <input type="text" placeholder="Email Address">
+                                                 <input type="password" placeholder="Password">
+                                                 <button type="submit" class="btn">Register</button>
+                                          </form>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+
+       <!-- #############################
+                     Footer SEction
+       ############################# -->
+       <div class="footer-section">
+              <div class="container">
+                     <div class="row">
+                            <div class="footer-col-1">
+                                   <h3>Download Our App</h3>
+                                   <p>Download App for android and ios mobile phones</p>
+                                   <div class="download-app-logo">
+                                          <img src="images/play-store.png" alt="play store">
+                                          <img src="images/app-store.png" alt="app store">
+                                   </div>
+                            </div>
+
+                            <div class="footer-col-2">
+                                   <img src="images/logo-white.png" alt="logo white">
+                                   <p>Our Purpose Is To Sustainably Make Pleasure and Benefits of Sports Accessible to
+                                          the Many</p>
+                            </div>
+
+                            <div class="footer-col-3">
+                                   <h3>Useful Links</h3>
+                                   <ul>
+                                          <li>Coupons</li>
+                                          <li>Blog Post</li>
+                                          <li>Return Policy</li>
+                                          <li>Join Affiliate</li>
+                                   </ul>
+                            </div>
+
+                            <div class="footer-col-4">
+                                   <h3>Follow Us</h3>
+                                   <ul>
+                                          <li>Facebook</li>
+                                          <li>Twitter</li>
+                                          <li>Instagram </li>
+                                          <li>Youtube</li>
+                                   </ul>
+                            </div>
+                     </div>
+
+                     <hr>
+                     <p class="copyright">Copyright 2022 - Built with love from Mighty Mike</p>
+              </div>
+       </div>
+
+
+       <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
